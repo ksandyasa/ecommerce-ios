@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailBottomCell" customModule="EcommerceApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZu-rV-qQH" customClass="RoundCornerButton" customModule="EcommerceApp" customModuleProvider="target">
+                    <rect key="frame" x="304" y="10" width="90" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="BZx-DC-NRF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="BUY">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="enabledLeftTopCorner" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="enabledRightTopCorner" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="enabledLeftBottomCorner" value="YES"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="enabledRightBottomCorner" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buyProductWithSender:" destination="iN0-l3-epB" eventType="touchUpInside" id="Hun-SU-mjX"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XBB-qG-xm3">
+                    <rect key="frame" x="244" y="10" width="44" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XBB-qG-xm3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0DM-5E-Gvm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hZu-rV-qQH" secondAttribute="trailing" constant="20" id="AFo-6U-1Xk"/>
+                <constraint firstItem="hZu-rV-qQH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="DzP-KD-xoa"/>
+                <constraint firstItem="XBB-qG-xm3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="I4g-NM-yDc"/>
+                <constraint firstItem="hZu-rV-qQH" firstAttribute="leading" secondItem="XBB-qG-xm3" secondAttribute="trailing" constant="16" id="SOM-bT-cXA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XBB-qG-xm3" secondAttribute="bottom" constant="10" id="dIR-26-9Z7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hZu-rV-qQH" secondAttribute="bottom" constant="10" id="wTj-XN-Ke7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailPrice" destination="XBB-qG-xm3" id="WPQ-Ud-yHT"/>
+                <outlet property="purchasedDetail" destination="hZu-rV-qQH" id="Xca-3e-IEh"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DetailTitleCell" customModule="EcommerceApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Judul" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="giU-1f-kRG">
+                    <rect key="frame" x="20" y="13" width="44.5" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="POv-VH-nWz">
+                    <rect key="frame" x="358" y="7" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="4O1-fl-Mcn"/>
+                        <constraint firstAttribute="height" constant="36" id="EJg-bS-Cro"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="POv-VH-nWz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="giU-1f-kRG" secondAttribute="trailing" constant="20" id="1UE-nO-jGA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="giU-1f-kRG" secondAttribute="bottom" constant="13" id="1Xu-ow-GQn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="POv-VH-nWz" secondAttribute="bottom" constant="7" id="2GG-qS-QJA"/>
+                <constraint firstItem="giU-1f-kRG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="DRE-mV-J9V"/>
+                <constraint firstItem="POv-VH-nWz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="d6B-UA-6jQ"/>
+                <constraint firstItem="giU-1f-kRG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="13" id="gKr-p0-mZ0"/>
+                <constraint firstItem="POv-VH-nWz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="sSo-MK-rxI"/>
+                <constraint firstAttribute="trailing" secondItem="POv-VH-nWz" secondAttribute="trailing" constant="20" id="zKH-xu-1Cz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="detailLoved" destination="POv-VH-nWz" id="DYU-3D-HGP"/>
+                <outlet property="detailTitle" destination="giU-1f-kRG" id="ub2-GA-Bqn"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </view>
+    </objects>
+</document>
